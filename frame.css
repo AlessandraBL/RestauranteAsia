@@ -1,0 +1,202 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* General */ 
+html, body {  
+    font-family: 'Arial', sans-serif;  
+    background-color: #000000; /* Fondo negro completo */
+    color: #ffffff; /* Texto blanco para contraste */
+    height: 100%; /* Asegura que el fondo negro cubra toda la página */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(to right, #ff9a9e, #493799); /* Degradado llamativo */
+    padding: 1.5rem; /* Aumenta el tamaño del navbar */
+    font-family: 'Dancing Script', cursive; /* Tipografía cursiva y atractiva */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 2rem;
+    color: #000000; /* Color negro para destacar */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-right: 1rem;
+}
+
+.custom-navbar .horario {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+    margin-left: auto; /* Empuja el horario hacia la derecha */
+}
+
+/* Navbar Hover Effects */
+.custom-navbar .nav-link:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: 800px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que se ajusten sin distorsionarse */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff6b6b; /* Color más llamativo para los íconos */
+    border-radius: 50%;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column; /* Permite que el contenido dentro de la tarjeta se distribuya verticalmente */
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
+    height: 200px; /* Define una altura fija para las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que se ajusten sin distorsionarse */
+}
+
+.card-body {
+    flex-grow: 1; /* Asegura que el contenido del cuerpo de la tarjeta ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido para que haya un espaciado adecuado */
+}
+
+.card-title {
+    color: #ff6b6b; /* Color vibrante para el título */
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff9a9e;
+    border-color: #ff9a9e;
+}
+
+.btn-primary:hover {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+/* Espacio entre las tarjetas */
+.row .card {
+    margin-bottom: 2rem; /* Añade espacio entre las tarjetas */
+}
+
+.footer-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px; /* Espacio interno */
+    border-top: 2px solid #ff4d94; /* Línea superior de color rosa */
+    margin-top: 30px; /* Espacio superior */
+}
+
+.social-icons {
+    margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+.social-icons a {
+    text-decoration: none; /* Sin subrayado */
+    color: #ff4d94; /* Color rosa */
+    margin: 0 15px; /* Espacio entre iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.social-icons a:hover {
+    color: #ff007f; /* Cambio de color al pasar el mouse */
+}
+
+.phone-number {
+    margin-top: 10px; /* Espacio superior */
+    color: #333; /* Color de texto */
+}
+
+
+/* Ajustes del contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Texto */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff6b6b;
+}
+
+p {
+    font-size: 1rem;
+    color: #030101;
+}
+
+/* Botones personalizados */
+.custom-btn {
+    background-color: #ff9a9e;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #ff6b6b;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .custom-navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    .custom-navbar .horario {
+        font-size: 1rem;
+    }
+}
+.Menu{
+color: white;
+text-align: center;
+font-size: 2.2rem;
+}
+
+.com{
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    }
+
+.ub{
+        color: white;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .section-container {
+        margin: 20px auto; /* Espacio superior e inferior de 20px y centrado horizontalmente */
+        padding: 20px; /* Espacio interno alrededor de la sección */
+        max-width: 90%; /* Ancho máximo para la sección */
+        background-color: rgba(187, 142, 142, 0.8); /* Fondo blanco semitransparente (opcional) */
+        border-radius: 10px; /* Bordes redondeados (opcional) */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
+    }
+
+    

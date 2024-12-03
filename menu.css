@@ -1,0 +1,226 @@
+body {
+    font-family: 'Quicksand', sans-serif, 'Poppins', sans-serif;
+    background-color: #000000 !important; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.menu-container {
+    flex: 0 0 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.ticket-container {
+    flex: 0 0 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #ff5c8d;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #ff3e69;
+}
+
+.ticket-info {
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+}
+
+.ticket-info .total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ticket-info button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.ticket-info button:hover {
+    background-color: #45a049;
+}
+
+.estado {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.ticket-list li {
+    font-size: 1rem;
+    color: #555;
+    padding: 5px 0;
+}
+
+.ticket-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ticket-container h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ticket-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.btn-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: #ff0000;
+}
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(to right, #ff9a9e, #493799); /* Degradado llamativo */
+    padding: 1.5rem; /* Aumenta el tamaño del navbar */
+    font-family: 'Dancing Script', cursive; /* Tipografía cursiva y atractiva */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 2rem;
+    color: #000000; /* Color negro para destacar */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-right: 1rem;
+}
+
+.custom-navbar .horario {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+    margin-left: auto; /* Empuja el horario hacia la derecha */
+}
+
+/* Navbar Hover Effects */
+.custom-navbar .nav-link:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+}
+
+.footer-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px; /* Espacio interno */
+    border-top: 2px solid #ff4d94; /* Línea superior de color rosa */
+    margin-top: 30px; /* Espacio superior */
+}
+
+.social-icons {
+    margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+.social-icons a {
+    text-decoration: none; /* Sin subrayado */
+    color: #ff4d94; /* Color rosa */
+    margin: 0 15px; /* Espacio entre iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.social-icons a:hover {
+    color: #ff007f; /* Cambio de color al pasar el mouse */
+}
+
+.phone-number {
+    margin-top: 10px; /* Espacio superior */
+    color: #333; /* Color de texto */
+}
+

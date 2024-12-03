@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #793153;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/800x600/?flowers,pastel');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #e14e4e;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

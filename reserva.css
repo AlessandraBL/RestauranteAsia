@@ -1,0 +1,142 @@
+/* Estilos para el formulario de reservación */
+#reservationForm {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    max-width: 500px; /* Ajustamos el ancho del formulario */
+    margin: 3rem auto; /* Centramos el formulario */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Título del formulario */
+#reservationForm h2 {
+    text-align: center;
+    color: #ff6b6b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem; /* Espaciado inferior del título */
+}
+
+/* Estilos para las etiquetas y campos */
+#reservationForm .form-label {
+    display: block; /* Hace que las etiquetas se comporten como bloques y cada una esté en su propia línea */
+    color: #333;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5rem; /* Espaciado debajo de cada etiqueta */
+}
+
+#reservationForm .form-control {
+    display: block; /* Coloca las cajas de texto debajo de las etiquetas */
+    width: 100%; /* Asegura que las cajas ocupen todo el ancho disponible */
+    border: 2px solid #ff6b6b;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #fff;
+    margin-bottom: 1.2rem; /* Mayor espaciado entre campos */
+}
+
+#reservationForm .form-control:focus {
+    border-color: #ff9a9e;
+    box-shadow: 0px 0px 5px rgba(255, 105, 135, 0.5);
+}
+
+/* Botón de enviar */
+#reservationForm .btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* El botón ocupará todo el ancho del formulario */
+    margin-top: 2rem;
+}
+
+#reservationForm .btn-primary:hover {
+    background-color: #ff9a9e;
+}
+
+/* Mensaje de confirmación */
+#confirmationMessage {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #28a745;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+/* Espaciado entre elementos */
+.mb-3 {
+    margin-bottom: 1.5rem; /* Más espacio entre los campos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #reservationForm {
+        padding: 1.5rem;
+    }
+
+    #reservationForm h2 {
+        font-size: 1.8rem;
+    }
+
+    #reservationForm .form-control {
+        font-size: 0.9rem;
+    }
+
+    #reservationForm .btn-primary {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(to right, #ff9a9e, #493799); /* Degradado llamativo */
+    padding: 0.4rem; /* Aumenta el tamaño del navbar */
+    font-family: 'Dancing Script', cursive; /* Tipografía cursiva y atractiva */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 2rem;
+    color: #000000; /* Color negro para destacar */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-right: 1rem;
+}
+
+.custom-navbar .horario {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: normal;
+    margin-left: auto; /* Empuja el horario hacia la derecha */
+}
+
+/* Navbar Hover Effects */
+.custom-navbar .nav-link:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .custom-navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    .custom-navbar .horario {
+        font-size: 1rem;
+    }
+}
