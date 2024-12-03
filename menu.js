@@ -131,7 +131,7 @@ function confirmarPedido() {
         carrito = [];
         actualizarTicket();
         // Redirigir a ticket.html
-        window.location.href = "https://restauranteasia-production.up.railway.app/ticket.html";
+        window.location.href = "https://restauranteasia-production.up.railway.app/Ticket.html";
     })
     .catch(error => {
         console.error(error);
