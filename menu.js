@@ -113,7 +113,7 @@ function confirmarPedido() {
     };
 
     // Enviar los datos al servidor
-    fetch('http://localhost:3000/confirmarPedido', {
+    fetch('https://restauranteasia-production.up.railway.app/confirmarPedido', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function obtenerUltimoPedido() {
-    fetch('http://localhost:3000/ultimoPedido')
+    fetch('https://restauranteasia-production.up.railway.app/ultimoPedido')
         .then(response => response.json())
         .then(pedido => {
             console.log('Último pedido recibido:', pedido);  // Verifica la respuesta
@@ -194,7 +194,7 @@ function cancelarPedido() {
     const confirmacion = confirm('¿Estás seguro de que deseas cancelar el pedido?');
     if (confirmacion) {
         // Enviar la solicitud al servidor para cancelar el pedido
-        fetch('http://localhost:3000/cancelarPedido', {
+        fetch('https://restauranteasia-production.up.railway.app/cancelarPedido', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: idPedido }) // Usar el ID correcto

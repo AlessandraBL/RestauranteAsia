@@ -17,7 +17,7 @@ function submitReservation() {
     const data = { nombre, correo: email, fecha, hora, personas, coment };
 
     // Enviar la solicitud POST al servidor
-    fetch('http://localhost:3000/Reservacion', {
+    fetch('https://restauranteasia-production.up.railway.app/Reservacion', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
