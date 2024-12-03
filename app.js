@@ -28,11 +28,11 @@ app.use(bodyParser.urlencoded( { extended:true } ));
 app.use(bodyParser.json());
 
 const database = mysql.createConnection({
-    host: process.env.DB_HOST , 
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: process.env.DB_PORT
+    host: process.env.DB_HOST || 'localhost', 
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '1234',
+    database: process.env.DB_NAME || 'RestauranteAsia',
+    port: process.env.DB_PORT || '3306'
 });
 
 app.get('/',(req,res)=>{
